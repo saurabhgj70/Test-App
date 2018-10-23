@@ -29,8 +29,20 @@ class App_Test_jenkinsUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.buttons["Button"].tap()
+        
+        let labelStaticText = app/*@START_MENU_TOKEN@*/.staticTexts["LABEL"]/*[[".staticTexts[\"tested\"]",".staticTexts[\"LABEL\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        if (labelStaticText.value as! String == "tested")
+        {
+            print("tested")
+        }
+        else
+        {
+            print("untested")
+        }
+
     }
     
 }

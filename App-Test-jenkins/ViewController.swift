@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func btntextclicked(_ sender: Any) {
+        lbl.text = "tested"
+        lbl.accessibilityValue = "tested"
+    }
+    @IBOutlet weak var btntext: UIButton!
+    @IBOutlet weak var lbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("test");
