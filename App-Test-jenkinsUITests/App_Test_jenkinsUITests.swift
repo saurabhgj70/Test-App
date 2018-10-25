@@ -31,7 +31,7 @@ class App_Test_jenkinsUITests: XCTestCase {
     func testExample() {
         
         let app = XCUIApplication()
-        app.buttons["Button"].tap()
+        app.buttons["Go"].tap()
         
         let labelStaticText = app/*@START_MENU_TOKEN@*/.staticTexts["LABEL"]/*[[".staticTexts[\"tested\"]",".staticTexts[\"LABEL\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         if (labelStaticText.value as! String == "tested")
