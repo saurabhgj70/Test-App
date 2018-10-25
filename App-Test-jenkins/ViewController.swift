@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBAction func btntextclicked(_ sender: Any) {
         lbl.text = "tested"
         lbl.accessibilityValue = "tested"
+        print("test")
     }
     @IBOutlet weak var btntext: UIButton!
     @IBOutlet weak var lbl: UILabel!
