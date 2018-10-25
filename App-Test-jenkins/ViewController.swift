@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtFirstName: UITextField!
+    @IBOutlet weak var txtLastName: UITextField!
     @IBAction func btntextclicked(_ sender: Any) {
         lbl.text = "tested"
         lbl.accessibilityValue = "tested"

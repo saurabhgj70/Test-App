@@ -44,5 +44,20 @@ class App_Test_jenkinsUITests: XCTestCase {
         }
 
     }
-    
+    func testRunLogin()  {
+        
+        
+        let app = XCUIApplication()
+        let element = app.otherElements.containing(.staticText, identifier:"LABEL").children(matching: .other).element
+        let textField = element.children(matching: .textField).element(boundBy: 0)
+        textField.tap()
+        textField.typeText("Login Id")
+        
+        let textField2 = element.children(matching: .textField).element(boundBy: 1)
+        textField2.tap()
+        textField2.typeText("Password")
+        
+        
+        
+    }
 }
